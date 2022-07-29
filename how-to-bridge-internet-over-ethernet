@@ -1,0 +1,11 @@
+-# sudo apt install bridge-utils
+-# sudo brctl addbr br0
+-# ip addr show
+
+-Now bridge together the connections you want to send internet too
+-Ex: If I'm using usb tethering from an android phone, the interface is called 'usb0', and I want to share my connection over the ethernet interface, 'enp3s0', then:
+	
+	# sudo brctl addif br0 enp3s0 usb0
+
+-Then use ifconfig to put br0 up
+-# sudo ifconfig br0 up
