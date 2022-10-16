@@ -1,0 +1,1 @@
+1. Add MOZ_ENABLE_WAYLAND=1 to /etc/environment
